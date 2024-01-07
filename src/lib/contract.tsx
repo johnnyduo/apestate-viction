@@ -137,7 +137,7 @@ export async function fetchContractData(address: string) {
 
   const result: ContractData[] = [];
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < TOKEN_LENGTH; i++) {
     result.push({
       landId: i + 1,
       symbol: SYMBOL_CONTRACT_DATA[i],
